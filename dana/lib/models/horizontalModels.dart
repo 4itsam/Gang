@@ -55,7 +55,7 @@ class Horizontalmodels {
       Horizontalmodels(
         name: "Ms Rezaei",
         jobPosition: "Flutter dev",
-        boxColor: const Color.fromARGB(255, 87, 85, 6),
+        boxColor: const Color.fromARGB(255, 49, 59, 5),
         image: "assets/images/p_Rezaei.jpg"
       ),
     );
@@ -71,7 +71,7 @@ class Horizontalmodels {
       Horizontalmodels(
         name: "Ilia mir",
         jobPosition: "unknown",
-        boxColor: const Color.fromARGB(255, 54, 7, 63),
+        boxColor: const Color.fromARGB(255, 59, 36, 5),
         image: "assets/images/p_Mir.jpg"
       ),
     );
