@@ -402,7 +402,7 @@ void _bottomInfoMembers(BuildContext context, index) {
     ),
     backgroundColor: const Color.fromARGB(0, 255, 255, 255),
     (context) => Container(
-      height: 410,
+      height: 440,
       width: double.infinity,
       decoration: BoxDecoration(
         boxShadow: [
@@ -449,13 +449,12 @@ void _bottomInfoMembers(BuildContext context, index) {
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Text(
-                "kasjlkdalkshdlka askhdlhas jashdkjh shdkjah;k kash;dha djhaslkhdkab jhdkajhsfk.\njksahkjhadhkashkldhlkahl ashkdh asdhkash jsahkjd",
-                style: TextStyle(
+              child: Text(horimodels[index].description,                style: TextStyle(
                   color: const Color.fromARGB(255, 131, 131, 131),
                   fontSize: 16,
-                ),
-              ),
+                ),),
+
+              
             ),
             SizedBox(height: 30),
             Row(
