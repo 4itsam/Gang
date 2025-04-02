@@ -62,14 +62,19 @@ class Home extends StatelessWidget {
                             "Contributes",
                             style: TextStyle(color: Colors.white, fontSize: 14),
                           ),
-                          Container(
-                            height: 30,
-                            width: 30,
-                            decoration: BoxDecoration(
-                              color: const Color.fromARGB(255, 172, 172, 172),
-                              borderRadius: BorderRadius.circular(100),
+                          GestureDetector(
+                            onTap: () {
+                              _showDialog(context, index);
+                            },
+                            child: Container(
+                              height: 30,
+                              width: 30,
+                              decoration: BoxDecoration(
+                                color: const Color.fromARGB(255, 110, 110, 110),
+                                borderRadius: BorderRadius.circular(100),
+                              ),
+                              child: Icon(Icons.play_arrow, size: 20,color:  Color.fromARGB(255, 184, 184, 184),),
                             ),
-                            child: Icon(Icons.arrow_right, size: 26),
                           ),
                         ],
                       ),
@@ -449,12 +454,13 @@ void _bottomInfoMembers(BuildContext context, index) {
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Text(horimodels[index].description,                style: TextStyle(
+              child: Text(
+                horimodels[index].description,
+                style: TextStyle(
                   color: const Color.fromARGB(255, 131, 131, 131),
                   fontSize: 16,
-                ),),
-
-              
+                ),
+              ),
             ),
             SizedBox(height: 30),
             Row(
@@ -531,5 +537,20 @@ void _bottomInfoMembers(BuildContext context, index) {
         ),
       ),
     ),
+  );
+}
+
+void _showDialog(BuildContext context, index) {
+  showDialog(
+    context: context,
+    builder:
+        (context) => AlertDialog(
+          title: Text(horimodels[index].name,style: TextStyle(color: Colors.white),),
+          backgroundColor: horimodels[index].boxColor,
+          
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(30),
+          ),
+        ),
   );
 }

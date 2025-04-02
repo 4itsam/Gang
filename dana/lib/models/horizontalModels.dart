@@ -51,7 +51,7 @@ description: "A mechanical engineering student and backend developer who’s kno
     );
     horiModels.add(
       Horizontalmodels(
-        name: "Ms Abdi",
+        name: "Miss Abdi",
         jobPosition: "Ui/Ux designer",
         boxColor: const Color.fromARGB(255, 8, 36, 78),
         image: "assets/images/p_Abdi.jpg",
@@ -59,7 +59,7 @@ description:      "A Persian literature student and talented designer, Miss Abdi
     );
     horiModels.add(
       Horizontalmodels(
-        name: "Ms Rezaei",
+        name: "Miss Rezaei",
         jobPosition: "Flutter dev",
         boxColor: const Color.fromARGB(255, 49, 59, 5),
         image: "assets/images/p_Rezaei.jpg",
@@ -68,7 +68,7 @@ description:      "A Persian literature student and talented designer, Miss Abdi
     );
     horiModels.add(
       Horizontalmodels(
-        name: "Ms Banaei",
+        name: "Miss Banaei",
         jobPosition: "Flutter dev",
         boxColor: const Color.fromARGB(255, 5, 53, 59),
         image: "assets/images/p_Banaei.jpg",
