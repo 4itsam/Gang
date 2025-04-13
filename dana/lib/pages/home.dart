@@ -73,7 +73,11 @@ class Home extends StatelessWidget {
                                 color: const Color.fromARGB(255, 110, 110, 110),
                                 borderRadius: BorderRadius.circular(100),
                               ),
-                              child: Icon(Icons.play_arrow, size: 20,color:  Color.fromARGB(255, 184, 184, 184),),
+                              child: Icon(
+                                Icons.play_arrow,
+                                size: 20,
+                                color: Color.fromARGB(255, 184, 184, 184),
+                              ),
                             ),
                           ),
                         ],
@@ -545,9 +549,12 @@ void _showDialog(BuildContext context, index) {
     context: context,
     builder:
         (context) => AlertDialog(
-          title: Text(horimodels[index].name,style: TextStyle(color: Colors.white),),
+          title: Text(
+            horimodels[index].name,
+            style: TextStyle(color: Colors.white),
+          ),
           backgroundColor: horimodels[index].boxColor,
-          
+
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(30),
           ),
